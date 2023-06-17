@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="portal_my_home_expense" name="Show Expenses" customize_show="True" inherit_id="portal.portal_my_home" priority="100">
+        <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
+            <t t-if="request.env.user.employee_id">
+                <t t-call="portal.portal_docs_entry">
+                    <t t-set="title">Expense</t>
+                    <t t-set="url" t-value="'/my/expense'" />
+                    <t t-set="placeholder_count" t-value="'expenses_count'"/>
+                </t>
+            </t>
+        </xpath>
+    </template>
+
+     <template id="portal_my_home_menu_expense" inherit_id="portal.portal_breadcrumbs" priority="40">
+        <xpath expr="//ol[hasclass('o_portal_submenu')]" position="inside">
+            <li t-if="page_name in ['expense', 'create_expense']" t-attf-class="breadcrumb-item #{'active' if not expense else ''}">
+                <a t-if="page_name == 'create_expense'" t-attf-href="/my/expense?{{ keep_query() }}">Expenses</a>
+                <t t-else="">Expense</t>
+            </li>
+        </xpath>
+    </template>
+
+        <template id="portal_searchbar_inh" inherit_id="portal.portal_searchbar">
+        <xpath expr="//nav" position="inside">
+            <a class="btn btn-secondary my-2 mx-1" t-if="page_name == 'expense'"  href="/create/expense">Expense Request</a>
+        </xpath>
+    </template>
+
+      <template id="portal_my_expense_list">
+
+         <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True" />
+            
+               <t t-call="portal.portal_searchbar">
+                <t t-set="title">EXpense</t>
+            </t>
+            
+            <t t-if="not grouped_expenses">
+                <p>There are currently no Expenses in your account.</p>
+            </t>
+            <div class="mx-1 mb-2 d-flex justify-content-center bg-white">
+                <t t-foreach="allocations" t-as="allocation_key">
+                    <div class="flex-fill border text-center">
+                        <div><b><t t-out="allocation_key" /></b></div>
+                        <div><t t-out="allocations[allocation_key][0]" /></div>
+                        <div><t t-out="allocations[allocation_key][1]" /> Available</div>
+                    </div>
+                </t> 
+            </div>
+            <t t-if="grouped_expenses">
+                <t t-call="portal.portal_table">
+                    <t t-foreach="grouped_expenses" t-as="expenses">
+                        <thead>
+                            <tr t-attf-class="{{'thead-light' if not groupby == 'none' else ''}}">
+                                <th>
+                                    <span class='d-none d-md-inline'>Employee Name</span>
+                                </th>
+                                <th class="text-right">Expense Date</th>
+                                <th class="text-right">Description</th>
+                                <th class="text-right">Paid By</th>
+                                <th class="text-right">Company</th>
+                                <th class="text-right">Total</th>
+                                <th class="text-right">Status</th>
+                                <th/>
+                            </tr>
+                        </thead>
+                       <!--  <t t-foreach="leaves" t-as="leave">
+                            <tr id="leave_row">
+                                <td>
+                                    <t t-esc="leave.employee_id.name" />
+                                </td>
+                                <td class="text-right">
+                                    <span t-field="leave.date" t-options="{'widget': 'date'}" />
+                                </td>
+                                <td class="text-right">
+                                    <span t-field="leave.category"/>
+                                </td>
+                                <td class="text-right">
+                                    <span t-field="leave.total"/>
+                                </td>
+                                <td class="text-right">
+                                    <span t-field="leave.company"/>
+                                </td>
+                                <td class="text-right"><span t-field="leave.holiday_status_id.name" /></td>
+                                <td class="text-right">
+                                    <span t-if="leave.state == 'draft'" t-attf-class="bg-info rounded-pill py-1 px-3" t-field="leave.state" />
+                                    <span t-if="leave.state == 'confirm'" t-attf-class="bg-warning rounded-pill py-1 px-3" t-field="leave.state" />
+                                    <span t-if="leave.state == 'refuse'" t-attf-class="bg-danger rounded-pill py-1 px-3" t-field="leave.state" />
+                                    <span t-if="leave.state == 'validate1'" t-attf-class="bg-primary rounded-pill py-1 px-3" t-field="leave.state" />
+                                    <span t-if="leave.state == 'validate'" t-attf-class="bg-success rounded-pill py-1 px-3" t-field="leave.state" />
+                                </td>
+                                <td class="text-right"><span t-field="expense.name" /></td>
+                                <td>
+                                    <i  t-if="expense.state in ['draft', 'confirm']" class="fa fa-trash text-danger" type="button" t-att-id="expense.id"/>
+                                </td>
+                            </tr>
+                        </t> -->
+                    </t>
+                </t>
+            </t>
+        </t>
+            
+    </template>
+
+
+
+     <template id="portal_apply_expense">
+        <t t-call="portal.portal_layout">
+            <form action="/save/expense" method="post">
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                <input type="hidden" name="employee" t-att-value="employee.id" />
+                <t t-set="breadcrumbs_searchbar" t-value="True" />
+                <t t-call="portal.portal_searchbar">
+                    <t t-set="title">Expense</t>
+                </t>
+
+                <div class="row my-2">
+                    <div class="form-group col-xl-3">
+                        <label class="col-form-label" for="end_date"><b>Description:</b></label>
+                    </div>
+                    <div class="form-group col-xl-6">
+                        <textarea name="text" class="form-control" required="true" rows="1" cols="30" />
+                        </div>
+                </div>
+
+                <div class="row mt-3 my-2">
+                    <div class="form-group col-xl-3">
+                        <label class="col-form-label" for="emp_name"><b>Employee Name:</b></label>
+                    </div>
+                    <div class="form-group col-xl-6">
+                        <input type="text" name="emp_name" class="form-control" t-att-value="employee.name" required='True' readonly='True' />
+                    </div>
+                </div>
+                <!-- <div class="row my-2">
+                    <div class="form-group col-xl-3">
+                        <label class="col-form-label" for="start_date"><b>Catogry:</b></label>
+                    </div>
+                    <div class="form-group col-xl-6">
+                        <input type="date" name="category" class="form-control" required="true" t-options='{"widget": "date"}' />
+                    </div>
+                </div> -->
+                <div class="row my-2">
+                    <div class="form-group col-xl-3">
+                        <label class="col-form-label" for="leave_type"><b>Catogry Type:</b></label>
+                    </div>
+                    <div class="form-group col-xl-6">
+                        <select id="category" name="leave_type" class="form-control" required='True'>
+                            <t t-foreach="category" t-as="type">
+                                <option t-att-value="type.id">
+                                    <span t-esc="type.name" />
+                                </option>
+                            </t>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row my-2">
+                    <div class="form-group col-xl-3">
+                        <label class="col-form-label" for="start_date"><b>Expense Date:</b></label>
+                    </div>
+                    <div class="form-group col-xl-6">
+                        <input type="date" name="date" class="form-control" required="true"  />
+                    </div>
+                </div>
+
+                <!-- <div class="row my-2">
+                    <div class="form-group col-xl-3">
+                        <label class="col-form-label" for="start_date"><b>Paid Type:</b></label>
+                    </div>
+                    <div class="form-group col-xl-6">
+                        <input type="" name="pay_type" class="form-control" required="true"  />
+                    </div>
+                </div> -->
+                    <div class="row my-2">
+                    <div class="form-group col-xl-3">
+                        <label class="col-form-label" for="leave_type"><b>Paid Type:</b></label>
+                    </div>
+                    <div class="form-group col-xl-6">
+                        <select id="pay_type" name="leave_type" class="form-control" required='True'>
+                            <t t-foreach="pay_type" t-as="type">
+                                <option t-att-value="type.id">
+                                    <span t-esc="type.name" />
+                                </option>
+                            </t>
+                        </select>
+                    </div>
+                </div>
+
+            <!--     <div class="row my-2">
+                    <div class="form-group col-xl-3">
+                        <label class="col-form-label" for="start_date"><b>Company</b></label>
+                    </div>
+                    <div class="form-group col-xl-6">
+                        <input type="date" name="company" class="form-control" required="true"  />
+                    </div>
+                </div> -->
+                <div class="row my-2">
+                    <div class="form-group col-xl-3">
+                        <label class="col-form-label" for="start_date"><b>Total:</b></label>
+                    </div>
+                    <div class="form-group col-xl-6">
+                        <input type="number" name="total" class="form-control" required="true"  />
+                    </div>
+                </div>
+                 <div class="row my-2">
+                    <div class="form-group col-xl-3">
+                        <label class="col-form-label" for="end_date"><b>Reason:</b></label>
+                    </div>
+                    <div class="form-group col-xl-6">
+                        <textarea name="reson" class="form-control" required="true" rows="3" cols="50" />
+                        </div>
+                </div>
+
+               
+           
+                <div class="row my-2" t-if="error">
+                    <div class="col-xl-6 offset-xl-3 bg-danger text-center">
+                        <div class="py-2"><b ><t t-out="error" /></b></div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col text-center">
+                        <button class="btn btn-primary mx-2" type="submit">Submit</button>
+                        <a class="btn btn-danger mx-2" href="/my/expense" >Cancel</a>
+                    </div>
+                </div>
+            </form>
+        </t>
+    </template>
+
+    
+   
+</odoo>

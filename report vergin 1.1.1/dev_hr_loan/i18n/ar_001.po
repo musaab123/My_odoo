@@ -1,0 +1,1579 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* dev_hr_loan
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-12 14:16+0000\n"
+"PO-Revision-Date: 2023-04-12 14:16+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: dev_hr_loan
+#: model:mail.template,body_html:dev_hr_loan.dep_manager_reject_loan
+msgid ""
+"\n"
+"\n"
+"            \t<p>Dear <i> <span t-esc=\"object.employee_id.name\"/> </i></p>\n"
+"            \t<p></p>\n"
+"            \t<p> Your Loan <b><i> <span t-esc=\"object.name\"/> </i></b> Request Rejected By <b><i><span t-esc=\"object.manager_id.name\"/> </i></b></p>\n"
+"\n"
+"            \t<p>You can access Loan From Bellow URL</p>\n"
+"            \t<p> <span t-esc=\"object.loan_url\"/> </p>\n"
+"\n"
+"            \t<b>Regards,</b><br/>\n"
+"\t\t<span t-esc=\"object.manager_id.name\"/>\n"
+"                "
+msgstr ""
+
+#. module: dev_hr_loan
+#: model:mail.template,body_html:dev_hr_loan.hr_manager_reject_skip_installment
+msgid ""
+"\n"
+"\n"
+"            \t<p>Dear <i> <span t-esc=\"object.employee_id.name\"/> </i></p>\n"
+"            \t<p></p>\n"
+"            \t<p> Your Skip Installment <b><i> <span t-esc=\"object.name\"/>  </i></b> Request Rejected By <b><i> <span t-esc=\"object.hr_manager_id.name\"/> </i></b></p>\n"
+"\n"
+"            \t<p>You can access Loan From Bellow URL</p>\n"
+"            \t<p><span t-esc=\"object.skip_installment_url\"/> </p>\n"
+"\n"
+"            \t<b>Regards,</b><br/>\n"
+"\t\t<span t-esc=\"object.hr_manager_id.name\"/>\n"
+"                "
+msgstr ""
+
+#. module: dev_hr_loan
+#: model:mail.template,body_html:dev_hr_loan.hr_manager_reject_loan
+msgid ""
+"\n"
+"\n"
+"            \t<p>Dear <i> <span t-esc=\"object.employee_id.name\"/></i></p>\n"
+"            \t<p></p>\n"
+"            \t<p> Your Loan <b><i> <span t-esc=\"object.name\"/></i></b> Request Rejected By <b><i>span t-esc=\"object.hr_manager_id.name\"/> ${}</i></b></p>\n"
+"\n"
+"            \t<p>You can access Loan From Bellow URL</p>\n"
+"            \t<p> <span t-esc=\"object.loan_url\"/> </p>\n"
+"\n"
+"            \t<b>Regards,</b><br/>\n"
+"\t\t<span t-esc=\"object.hr_manager_id.name\"/>\n"
+"                "
+msgstr ""
+
+#. module: dev_hr_loan
+#: model:mail.template,body_html:dev_hr_loan.hr_manager_confirm_loan
+msgid ""
+"\n"
+"\n"
+"            \t<p>Dear <i> <span t-esc=\"object.employee_id.name\"/></i></p>\n"
+"            \t<p></p>\n"
+"            \t<p> Your Loan <b><i><span t-esc=\"object.name\"/> </i></b> Request Confirm By <b><i> <span t-esc=\"object.hr_manager_id.name\"/> </i></b></p>\n"
+"\n"
+"            \t<p>You can access Loan From Bellow URL</p>\n"
+"            \t<p> <span t-esc=\"object.loan_url\"/> </p>\n"
+"\n"
+"            \t<b>Regards,</b><br/>\n"
+"\t\t<span t-esc=\"object.hr_manager_id.name\"/>\n"
+"                "
+msgstr ""
+
+#. module: dev_hr_loan
+#: model:mail.template,body_html:dev_hr_loan.hr_manager_confirm_skip_installment
+msgid ""
+"\n"
+"\n"
+"            \t<p>Dear <i> <span t-esc=\"object.employee_id.name\"/></i></p>\n"
+"            \t<p></p>\n"
+"            \t<p> Your Skip Installment <b><i> <span t-esc=\"object.name\"/>  </i></b> Request Confirm By <b><i><span t-esc=\"object.hr_manager_id.name\"/> </i></b></p>\n"
+"\n"
+"            \t<p>You can access Loan From Bellow URL</p>\n"
+"            \t<p> <i><span t-esc=\"object.skip_installment_url\"/> </p>\n"
+"\n"
+"            \t<b>Regards,</b><br/>\n"
+"\t\t<span t-esc=\"object.hr_manager_id.name\"/>\n"
+"                "
+msgstr ""
+
+#. module: dev_hr_loan
+#: model:mail.template,body_html:dev_hr_loan.dep_manager_reject_skip_installment
+msgid ""
+"\n"
+"\n"
+"            \t<p>Dear <i> <span t-esc=\"object.employee_id.name\"/></i></p>\n"
+"            \t<p></p>\n"
+"            \t<p> Your Skip Installment <b><i> <span t-esc=\"object.name\"/> </i></b> Request Rejected By <b><i><span t-esc=\"object.manager_id.name\"/> </i></b></p>\n"
+"\n"
+"            \t<p>You can access Loan From Bellow URL</p>\n"
+"            \t<p>  <span t-esc=\"object.skip_installment_url\"/> </p>\n"
+"\n"
+"            \t<b>Regards,</b><br/>\n"
+"\t\t<span t-esc=\"object.manager_id.name\"/>\n"
+"                "
+msgstr ""
+
+#. module: dev_hr_loan
+#: model:mail.template,body_html:dev_hr_loan.hr_manager_closed_loan
+msgid ""
+"\n"
+"\n"
+"            \t<p>Dear <i><span t-esc=\"object.employee_id.name\"/></i></p>\n"
+"            \t<p></p>\n"
+"            \t<p> Your Loan <b><i><span t-esc=\"object.name\"/> </i></b>  has been closed By <b><i><span t-esc=\"object.hr_manager_id.name\"/> </i></b></p>\n"
+"\n"
+"            \t<p>You can access Loan From Bellow URL</p>\n"
+"            \t<p> <span t-esc=\"object.loan_url\"/></p>\n"
+"\n"
+"            \t<b>Regards,</b><br/>\n"
+"\t\t<span t-esc=\"object.hr_manager_id.name\"/>\n"
+"                "
+msgstr ""
+
+#. module: dev_hr_loan
+#: model:mail.template,body_html:dev_hr_loan.dev_hr_manager_request
+msgid ""
+"\n"
+"\n"
+"            \t<p>To <b><i>HR Manager</i></b></p>\n"
+"            \t<p> Loan request from <b><i> <span t-esc=\"object.employee_id.name\"/> </i></b></p>\n"
+"            \t<p> Loan Request Approve by <b><i> <span t-esc=\"object.manager_id.name\"/></i></b> Department Manager</p>\n"
+"            \t<p>\n"
+"            \t\t<b>Loan Detail:</b><br/>\n"
+"            \t\t<b>Loan Type: </b> <span t-esc=\"object.loan_type_id.name\"/><br/>\n"
+"            \t\t<b>Loan Amount: </b>    <span t-esc=\"object.loan_amount\"/><br/>\n"
+"            \t\t<b>Loan Term: </b> <span t-esc=\"object.term\"/> <br/>\n"
+"            \t\t<b>Payment Start Date: </b> <span t-esc=\"object.start_date\"/> <br/>\n"
+"            \t\t<b>Payment End Date: </b> <span t-esc=\"object.end_date\"/> <br/>\n"
+"            \t</p>\n"
+"\n"
+"            \t<p>You can access Loan From Bellow URL</p>\n"
+"            \t<p> <span t-esc=\"object.loan_url\"/> </p>\n"
+"\n"
+"            \t<b>Regards,</b><br/>\n"
+"            \t <span t-esc=\"object.manager_id.name\"/> \n"
+"                "
+msgstr ""
+
+#. module: dev_hr_loan
+#: model:mail.template,body_html:dev_hr_loan.dev_skip_ins_hr_manager_request
+msgid ""
+"\n"
+"\n"
+"            \t<p>To <b><i>HR Manager</i></b></p>\n"
+"            \t<p> Skip Installment request from <b><i> <span t-esc=\"object.employee_id.name\"/> </i></b></p>\n"
+"            \t<p> Skip Installment Request Approve by <b><i><span t-esc=\"object.manager_id.name\"/> </i></b> Department Manager</p>\n"
+"            \t<p>\n"
+"            \t\t<b>Installment Detail:</b><br/>\n"
+"            \t\t<b>Loan :</b> <span t-esc=\"object.loan_id.name\"/> <br/>\n"
+"            \t\t<b>Installment: </b> <span t-esc=\"object.installment_id.name\"/> <br/>\n"
+"            \t\t<b>Installment Amount: </b> <span t-esc=\"object.installment_id.installment_amt\"/> <br/>\n"
+"            \t\t<b>Interest Amount: </b>  <span t-esc=\"object.installment_id.ins_interest\"/> <br/>\n"
+"            \t</p>\n"
+"\n"
+"            \t<p>You can access Loan From Bellow URL</p>\n"
+"            \t<p> <span t-esc=\"object.skip_installment_url\"/></p>\n"
+"\n"
+"            \t<b>Regards,</b><br/>\n"
+"            \t<span t-esc=\"object.manager_id.name\"/> \n"
+"                "
+msgstr ""
+
+#. module: dev_hr_loan
+#: model:mail.template,body_html:dev_hr_loan.dev_dep_manager_request
+msgid ""
+"\n"
+"            \n"
+"            \t<p>Dear <i> <span t-esc=\"object.manager_id.name\"/></i></p>\n"
+"            \t<p></p>\n"
+"            \t<p> Loan request from <b><i> <span t-esc=\"object.employee_id.name\"/> </i></b></p>\n"
+"            \t<p>\n"
+"            \t\t<b>Loan Detail:</b><br/>\n"
+"            \t\t<b>Loan Type: </b>  <span t-esc=\"object.loan_type_id.name\"/> <br/>\n"
+"            \t\t<b>Loan Amount: </b> <span t-esc=\"object.loan_amount\"/> <br/>\n"
+"            \t\t<b>Loan Term: </b> <span t-esc=\"object.term\"/><br/>\n"
+"            \t\t<b>Payment Start Date: </b> <span t-esc=\"object.start_date\"/> <br/>\n"
+"            \t\t<b>Payment End Date: </b> <span t-esc=\"object.end_date\"/><br/>\n"
+"            \t</p>\n"
+"            \t\n"
+"            \t<p>You can access Loan From Bellow URL</p>\n"
+"            \t<p> <span t-esc=\"object.loan_url\"/></p>\n"
+"            \t\n"
+"            \t<b>Regards,</b><br/>\n"
+"\t\t<span t-esc=\"object.employee_id.name\"/>\n"
+"                "
+msgstr ""
+
+#. module: dev_hr_loan
+#: model:mail.template,body_html:dev_hr_loan.dev_skip_dep_manager_approval
+msgid ""
+"\n"
+"            \n"
+"            \t<p>Dear <i> <span t-esc=\"object.manager_id.name\"/></i></p>\n"
+"            \t<p></p>\n"
+"            \t<p> Skip Installment request from <b><i> <span t-esc=\"object.employee_id.name\"/></i></b></p>\n"
+"            \t<p>\n"
+"            \t\t<b>Installment Detail:</b><br/>\n"
+"            \t\t<b>Loan :</b> <span t-esc=\"object.loan_id.name\"/> <br/>\n"
+"            \t\t<b>Installment: </b> <span t-esc=\"object.installment_id.name\"/><br/>\n"
+"            \t\t<b>Installment Amount: </b> <span t-esc=\"object.installment_id.installment_amt\"/> <br/>\n"
+"            \t\t<b>Interest Amount: </b> <span t-esc=\"object.installment_id.ins_interest\"/> <br/>\n"
+"            \t</p>\n"
+"            \t\n"
+"            \t<p>You can access Skip Installment From Bellow URL</p>\n"
+"\t\t\n"
+"            \t<p>  <span t-esc=\"object.skip_installment_url\"/></p>\n"
+"            \t\n"
+"            \t<b>Regards,</b><br/>\n"
+"            \t<span t-esc=\"object.employee_id.name\"/> \n"
+"                "
+msgstr ""
+
+#. module: dev_hr_loan
+#: model:mail.template,body_html:dev_hr_loan.dev_employee_loan_detail_send_mail
+msgid ""
+"\n"
+"            <div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 14px; color: rgb(34, 34, 34); background-color: #FFF;\">\n"
+"            <p>Dear <b> <span t-esc=\"object.employee_id.name\"/></b>,</p>\n"
+"            <p>Here in this mail attached  <b> <span t-esc=\"object.name\"/></b> Loan Details.</p>\n"
+"           </div>\n"
+"            "
+msgstr ""
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.external_layout_seti
+msgid "<i class=\"fa fa-at\" role=\"img\" aria-label=\"Email\" title=\"Email\"/>"
+msgstr ""
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.external_layout_seti
+msgid "<i class=\"fa fa-building-o\" role=\"img\" aria-label=\"Fiscal number\"/>"
+msgstr ""
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.hr_loan_type_kanban
+msgid "<i class=\"fa fa-ellipsis-v\" role=\"img\" aria-label=\"Manage\" title=\"Manage\"/>"
+msgstr ""
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.external_layout_seti
+msgid "<i class=\"fa fa-globe\" role=\"img\" aria-label=\"Website\" title=\"Website\"/>"
+msgstr ""
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.external_layout_seti
+msgid "<i class=\"fa fa-phone\" role=\"img\" aria-label=\"Phone\" title=\"Phone\"/>"
+msgstr ""
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.external_layout_seti
+msgid ""
+"<span class=\"text-right arabic\" style=\"padding-right:-6px;\">رقم السجل "
+"التجاري</span>‬"
+msgstr ""
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.external_layout_seti
+msgid ""
+"<span class=\"text-right arabic\" style=\"padding-right:-6px;\">ضريبة القيمة"
+" المضافة</span>‬"
+msgstr ""
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+msgid "<span style=\"color: #800000\">Date: </span>"
+msgstr "التاريخ"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+msgid "<span style=\"color: #800000\">Name : </span>"
+msgstr "الاسم"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.hr_loan_type_kanban
+msgid "<span>Check Approve Loan</span>"
+msgstr "تحقق من الموافقة على القرض"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.hr_loan_type_kanban
+msgid "<span>View</span>"
+msgstr "العرض"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__message_needaction
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__message_needaction
+msgid "Action Needed"
+msgstr "الإجراءات اللازمة"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__is_apply_interest
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan_type__is_apply_interest
+msgid "Apply Interest"
+msgstr "تطبيق الفائدة"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__dev_skip_installment__state__approve
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_dev_skip_installment_form
+msgid "Approve"
+msgstr "الموافقة"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+msgid "Approve Request"
+msgstr "طلب الموافقة"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_res_company__arabic_city
+msgid "Arabic City"
+msgstr "المدينة العربيه"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_res_company__arabic_country
+msgid "Arabic Country"
+msgstr "الدوله العربيه"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_res_company__arabic_name
+msgid "Arabic Name"
+msgstr "الاسم العربيه"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_res_company__arabic_state
+msgid "Arabic State"
+msgstr "الولايه العربيه"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_res_company__arabic_street
+msgid "Arabic Street"
+msgstr "الشارع العربي"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_res_company__arabic_street2
+msgid "Arabic Street2"
+msgstr ""
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_res_company__arabic_zip
+msgid "Arabic Zip"
+msgstr "الكود العربي"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__message_attachment_count
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__employee_loan__payment_method__by_payslip
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_employee_loan_template
+msgid "By Payslip"
+msgstr "بواسطة قسيمة الدفع"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__import_loan__file_type__csv
+msgid "CSV"
+msgstr "نوع الملف CSV"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__dev_skip_installment__state__cancel
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__employee_loan__state__cancel
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__installment_analytic_line_view__state__cancel
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.import_loan_form
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_dev_skip_installment_form
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_loan_import_logs_form
+msgid "Cancel"
+msgstr "الغاء"
+
+#. module: dev_hr_loan
+#: model_terms:ir.actions.act_window,help:dev_hr_loan.action_hr_approval
+#: model_terms:ir.actions.act_window,help:dev_hr_loan.action_loan_create
+#: model_terms:ir.actions.act_window,help:dev_hr_loan.action_loan_paid
+#: model_terms:ir.actions.act_window,help:dev_hr_loan.action_loan_tree_done
+#: model_terms:ir.actions.act_window,help:dev_hr_loan.action_loan_tree_draft
+#: model_terms:ir.actions.act_window,help:dev_hr_loan.action_view_all_loan
+#: model_terms:ir.actions.act_window,help:dev_hr_loan.get_hr_loan_type
+msgid "Click here to create a new Loan."
+msgstr "انقر هنا لإنشاء قرض جديد"
+
+#. module: dev_hr_loan
+#: model_terms:ir.actions.act_window,help:dev_hr_loan.hr_loan_dashboard_action
+msgid "Click to create a Loan type."
+msgstr "انقر لإنشاء نوع القرض."
+
+#. module: dev_hr_loan
+#: model_terms:ir.actions.act_window,help:dev_hr_loan.action_dev_skip_installment
+msgid "Click to define a new Skip Installment."
+msgstr "انقر لتحديد أقساط تخطي جديدة"
+
+#. module: dev_hr_loan
+#: model_terms:ir.actions.act_window,help:dev_hr_loan.action_employee_loan
+msgid "Click to define a new loan."
+msgstr "انقر لتحديد قرض جديد."
+
+#. module: dev_hr_loan
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__employee_loan__state__close
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__installment_analytic_line_view__state__close
+msgid "Close"
+msgstr "اغلاق"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+msgid "Close Loan"
+msgstr "اغلاق الغرض"
+
+#. module: dev_hr_loan
+#: model:mail.template,name:dev_hr_loan.hr_manager_closed_loan
+msgid "Closed Loan"
+msgstr "قرض مغلق"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan_type__color
+msgid "Color"
+msgstr "لون"
+
+#. module: dev_hr_loan
+#: model:ir.model,name:dev_hr_loan.model_res_company
+msgid "Companies"
+msgstr "الشركات "
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+msgid "Compute Installment"
+msgstr "حساب القسط"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__dev_skip_installment__state__confirm
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_dev_skip_installment_form
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+msgid "Confirm"
+msgstr "تاكيد"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan_type__count_loan_done
+msgid "Count Loan Done"
+msgstr "عدد القروض المكتملة"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan_type__count_loan_draft
+msgid "Count Loan Draft"
+msgstr "عدد القروض في حالة الطلب"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan_type__count_loan_paid
+msgid "Count Loan Paid"
+msgstr "عد القرض المدفوع"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_loan_document__create_uid
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__create_uid
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__create_uid
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan_type__create_uid
+#: model:ir.model.fields,field_description:dev_hr_loan.field_import_loan__create_uid
+#: model:ir.model.fields,field_description:dev_hr_loan.field_import_logs__create_uid
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_line__create_uid
+msgid "Created by"
+msgstr "انشئ بواسطة"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_loan_document__create_date
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__create_date
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__create_date
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan_type__create_date
+#: model:ir.model.fields,field_description:dev_hr_loan.field_import_loan__create_date
+#: model:ir.model.fields,field_description:dev_hr_loan.field_import_logs__create_date
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_line__create_date
+msgid "Created on"
+msgstr "انشئ بتاريخ"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_loan_document__date
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__date
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__date
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_analytic_line_view__date
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_line__date
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_employee_loan_template
+msgid "Date"
+msgstr "التاريح"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_account_bank_statement_line__invoice_date_supply
+#: model:ir.model.fields,field_description:dev_hr_loan.field_account_move__invoice_date_supply
+#: model:ir.model.fields,field_description:dev_hr_loan.field_account_payment__invoice_date_supply
+msgid "Date Of Supply"
+msgstr ""
+
+#. module: dev_hr_loan
+#: model:mail.template,name:dev_hr_loan.dep_manager_reject_loan
+msgid "Dep Manager Loan Request Reject"
+msgstr "رفض طلب قرض من مدير الإدارة"
+
+#. module: dev_hr_loan
+#: model:mail.template,name:dev_hr_loan.dep_manager_reject_skip_installment
+msgid "Dep Manager Skip Installment Request Reject"
+msgstr "رفض طلب التقسيط من مدير الإدارة"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__department_id
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_analytic_line_view__department_id
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_employee_loan_template
+msgid "Department"
+msgstr "القسم"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__employee_loan__state__dep_approval
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__installment_analytic_line_view__state__dep_approval
+msgid "Department Approval"
+msgstr "تاكيد القسم"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__manager_id
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__manager_id
+#: model:res.groups,comment:dev_hr_loan.group_department_manager
+msgid "Department Manager"
+msgstr "مدير القسم"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_loan_document__display_name
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__display_name
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__display_name
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan_type__display_name
+#: model:ir.model.fields,field_description:dev_hr_loan.field_import_loan__display_name
+#: model:ir.model.fields,field_description:dev_hr_loan.field_import_logs__display_name
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_analytic_line_view__display_name
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_line__display_name
+msgid "Display Name"
+msgstr "عرض الاسم"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_loan_document__document
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+msgid "Document"
+msgstr "الوثيقة"
+
+#. module: dev_hr_loan
+#: model:ir.model,name:dev_hr_loan.model_dev_loan_document
+msgid "Document of Loan of Employee"
+msgstr "وثيقة قرض الموظف"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__dev_skip_installment__state__done
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__employee_loan__state__done
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__installment_analytic_line_view__state__done
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.hr_loan_type_kanban
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_dev_skip_installment_filter
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_dev_skip_installment_form
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_filter
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+msgid "Done"
+msgstr "منتهي"
+
+#. module: dev_hr_loan
+#: model:ir.actions.act_window,name:dev_hr_loan.action_hr_approval
+#: model:ir.actions.act_window,name:dev_hr_loan.action_loan_paid
+#: model:ir.actions.act_window,name:dev_hr_loan.action_loan_tree_done
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_dev_skip_installment_filter
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_filter
+msgid "Done Loan"
+msgstr "قرص منتهي"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__dev_skip_installment__state__draft
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__employee_loan__state__draft
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__installment_analytic_line_view__state__draft
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.hr_loan_type_kanban
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_dev_skip_installment_filter
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_filter
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: dev_hr_loan
+#: model:ir.actions.act_window,name:dev_hr_loan.action_loan_tree_draft
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_dev_skip_installment_filter
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_filter
+msgid "Draft Loan"
+msgstr "قرض مسودة"
+
+#. module: dev_hr_loan
+#: model:ir.model,name:dev_hr_loan.model_hr_employee
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_loan_document__employee_id
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__employee_id
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__employee_id
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_analytic_line_view__employee_id
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_line__employee_id
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_employee_loan_template
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_installment_analytic_line_filter
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: dev_hr_loan
+#: model:ir.actions.act_window,name:dev_hr_loan.act_hr_employee_loan_list
+#: model:ir.actions.act_window,name:dev_hr_loan.action_employee_loan
+#: model:ir.actions.act_window,name:dev_hr_loan.get_hr_loan_type
+#: model:ir.ui.menu,name:dev_hr_loan.menu_employee_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_dev_skip_installment_form
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_tree
+msgid "Employee Loan"
+msgstr "قرض الموظف"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_employee_loan_template
+msgid "Employee Loan -"
+msgstr "قرض الموظف"
+
+#. module: dev_hr_loan
+#: model:mail.template,name:dev_hr_loan.dev_employee_loan_detail_send_mail
+msgid "Employee Loan Send Mail"
+msgstr "قرض الموظف أرسل بريدًا"
+
+#. module: dev_hr_loan
+#: model:ir.actions.act_window,name:dev_hr_loan.action_employee_loan_type
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_type_form
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_type_tree
+msgid "Employee Loan Type"
+msgstr "نوع قرض الموظف"
+
+#. module: dev_hr_loan
+#. odoo-python
+#: code:addons/dev_hr_loan/models/employee_loan.py:0
+#, python-format
+msgid "Employee Private Address is not selected in Employee Form !!!"
+msgstr "لم يتم تحديد العنوان الخاص للموظف في نموذج الموظف !!!"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_dev_skip_installment_filter
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_filter
+msgid "Employees"
+msgstr "الموظفين"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__end_date
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_employee_loan_template
+msgid "End Date"
+msgstr "تاريخ الانتهاء"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__import_loan__file_type__excel
+msgid "Excel"
+msgstr "اكسل"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__extra_in_amount
+msgid "Extra Int. Amount"
+msgstr "كثافة العمليات الإضافية. كمية"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__n_extra_in_amount
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_analytic_line_view__n_extra_in_amount
+msgid "Extra Interest Amount"
+msgstr "مبلغ الفائدة الإضافية"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_import_loan__csv_file
+msgid "File"
+msgstr "ملف"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_import_loan__file_type
+msgid "File Type"
+msgstr "نوع الملف"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__message_follower_ids
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__message_partner_ids
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء) "
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_dev_skip_installment_filter
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_filter
+msgid "Group By"
+msgstr "التجميع حسب"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_installment_analytic_line_filter
+msgid "Group By..."
+msgstr "التجميع حسب"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__employee_loan__state__hr_approval
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__installment_analytic_line_view__state__hr_approval
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_filter
+msgid "HR Approval"
+msgstr "موافقة الموارد البشرية"
+
+#. module: dev_hr_loan
+#: model:res.groups,name:dev_hr_loan.group_department_manager
+msgid "HR Department Manager"
+msgstr "موافقة مدير القسم"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__hr_manager_id
+msgid "HR Manager"
+msgstr "مدير الموارد البشرية"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__has_message
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__has_message
+msgid "Has Message"
+msgstr "رسالة"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__hr_manager_id
+msgid "Hr Manager"
+msgstr "مدير الموارد البشرية"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_loan_document__id
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__id
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__id
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan_type__id
+#: model:ir.model.fields,field_description:dev_hr_loan.field_import_loan__id
+#: model:ir.model.fields,field_description:dev_hr_loan.field_import_logs__id
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_analytic_line_view__id
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_line__id
+msgid "ID"
+msgstr "بطاقة تعريف"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__is_close
+msgid "IS close"
+msgstr "هل مغلق"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,help:dev_hr_loan.field_dev_skip_installment__message_needaction
+#: model:ir.model.fields,help:dev_hr_loan.field_employee_loan__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديدها ، فإن الرسائل الجديدة تتطلب انتباهك."
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,help:dev_hr_loan.field_dev_skip_installment__message_has_error
+#: model:ir.model.fields,help:dev_hr_loan.field_dev_skip_installment__message_has_sms_error
+#: model:ir.model.fields,help:dev_hr_loan.field_employee_loan__message_has_error
+#: model:ir.model.fields,help:dev_hr_loan.field_employee_loan__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديده ، فإن بعض الرسائل بها خطأ في التسليم."
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.import_loan_form
+msgid "Import"
+msgstr "استيراد"
+
+#. module: dev_hr_loan
+#: model:ir.actions.act_window,name:dev_hr_loan.action_import_loan
+#: model:ir.ui.menu,name:dev_hr_loan.menu_import_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.import_loan_form
+msgid "Import Loan"
+msgstr "استيراد قرض"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_employee_loan_template
+msgid "Ins. Amount"
+msgstr "مبلغ القسط"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__installment_id
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+msgid "Installment"
+msgstr "تقسيط"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__installment_amount
+#: model:ir.model.fields,field_description:dev_hr_loan.field_hr_payslip__installment_amount
+#: model:ir.model.fields,field_description:dev_hr_loan.field_hr_payslip__installment_int
+msgid "Installment Amount"
+msgstr "مبلغ التقسيط"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_line__installment_amt
+msgid "Installment Amt"
+msgstr "مبلغ التقسيط"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_installment_analytic_line_form
+msgid "Installment Analytic Entry"
+msgstr "دفتر تحليل القسط"
+
+#. module: dev_hr_loan
+#: model:ir.model,name:dev_hr_loan.model_installment_analytic_line_view
+msgid "Installment Analytic Line View"
+msgstr "عرض خط تحليلي بالتقسيط"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__installment_count
+msgid "Installment Count"
+msgstr "عدد الأقساط"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_loan_emi_form
+msgid "Installment Form"
+msgstr "نموذج الاقساط"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_hr_payslip__installment_ids
+msgid "Installment Lines"
+msgstr "خطوط التقسيط"
+
+#. module: dev_hr_loan
+#: model:ir.actions.act_window,name:dev_hr_loan.action_installment_line
+msgid "Installment Loan"
+msgstr "تقسيط القرض"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__installment_lines
+msgid "Installments"
+msgstr "الاقساط"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_employee_loan_template
+msgid "Int. Amount"
+msgstr "مبلغ الفائدة"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_line__ins_interest
+msgid "Interest"
+msgstr "الفائدة"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan_type__interest_account
+msgid "Interest Account"
+msgstr " حساب الفائدة"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__interest_amount
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__n_interest_amount
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_analytic_line_view__n_interest_amount
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_employee_loan_template
+msgid "Interest Amount"
+msgstr "مبلغ الفائدة"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__interest_rate
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan_type__interest_rate
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_analytic_line_view__interest_rate
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_employee_loan_template
+msgid "Interest Rate"
+msgstr "معدل الفائدة"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__interest_type
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan_type__interest_type
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_employee_loan_template
+msgid "Interest Type"
+msgstr "نوع الفائدة"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__message_is_follower
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__message_is_follower
+msgid "Is Follower"
+msgstr "هل متابع"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__job_id
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_analytic_line_view__job_id
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_employee_loan_template
+msgid "Job Position"
+msgstr "المسمئ الوظيفي"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan_type__journal_id
+msgid "Journal"
+msgstr "اليومية"
+
+#. module: dev_hr_loan
+#: model:ir.model,name:dev_hr_loan.model_account_move
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__move_id
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+msgid "Journal Entry"
+msgstr "قيد اليومية"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_loan_document____last_update
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment____last_update
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan____last_update
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan_type____last_update
+#: model:ir.model.fields,field_description:dev_hr_loan.field_import_loan____last_update
+#: model:ir.model.fields,field_description:dev_hr_loan.field_import_logs____last_update
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_analytic_line_view____last_update
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_line____last_update
+msgid "Last Modified on"
+msgstr "تاريخ اخر تعديل"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_loan_document__write_uid
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__write_uid
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__write_uid
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan_type__write_uid
+#: model:ir.model.fields,field_description:dev_hr_loan.field_import_loan__write_uid
+#: model:ir.model.fields,field_description:dev_hr_loan.field_import_logs__write_uid
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_line__write_uid
+msgid "Last Updated by"
+msgstr " اخر تحديث"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_loan_document__write_date
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__write_date
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__write_date
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan_type__write_date
+#: model:ir.model.fields,field_description:dev_hr_loan.field_import_loan__write_date
+#: model:ir.model.fields,field_description:dev_hr_loan.field_import_logs__write_date
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_line__write_date
+msgid "Last Updated on"
+msgstr "تاريخ اخر تحديث"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__employee_loan__interest_type__liner
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__employee_loan_type__interest_type__liner
+msgid "Liner"
+msgstr ""
+
+#. module: dev_hr_loan
+#: model:ir.model,name:dev_hr_loan.model_installment_line
+msgid "Lines of an Installment"
+msgstr "خطوط التقسيط"
+
+#. module: dev_hr_loan
+#: model:ir.actions.act_window,name:dev_hr_loan.hr_loan_dashboard_action
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_loan_document__loan_id
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__loan_id
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_analytic_line_view__name
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_line__loan_id
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_hr_employee_loan_inherit_form
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_filter
+msgid "Loan"
+msgstr "القرض"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan_type__loan_account
+msgid "Loan Account"
+msgstr "حساب القرض"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__loan_amount
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_analytic_line_view__loan_amount
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_line__amount
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_employee_loan_template
+msgid "Loan Amount"
+msgstr "حساب القرض"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan_type__loan_limit
+msgid "Loan Amount Limit"
+msgstr "سقف حساب القرض"
+
+#. module: dev_hr_loan
+#: model:ir.actions.act_window,name:dev_hr_loan.action_loan_report
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.installment_analytic_line_view_tree
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_installment_analytic_line_filter
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_installment_analytic_line_form
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_installment_analytic_line_pivot
+msgid "Loan Analysis"
+msgstr "تحليل القرض"
+
+#. module: dev_hr_loan
+#: model:ir.ui.menu,name:dev_hr_loan.menu_loan_report
+msgid "Loan Analysis Report"
+msgstr "تقرير تحليل القرض"
+
+#. module: dev_hr_loan
+#: model:ir.actions.act_window,name:dev_hr_loan.action_loan_create
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.hr_loan_type_kanban
+msgid "Loan Create"
+msgstr "انشاء قرض"
+
+#. module: dev_hr_loan
+#: model:ir.ui.menu,name:dev_hr_loan.employee_loan_dashboard_id
+msgid "Loan Dashboard"
+msgstr "لوحة معلومات القرض"
+
+#. module: dev_hr_loan
+#: model:ir.actions.act_window,name:dev_hr_loan.action_loan_document
+#: model:ir.ui.menu,name:dev_hr_loan.loan_document_id
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_loan_document_tree
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_loan_document_view
+msgid "Loan Document"
+msgstr "وثيقة القرض"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__loan_document_line_ids
+msgid "Loan Document Line"
+msgstr "خطوط وثيقة القرض"
+
+#. module: dev_hr_loan
+#: model:hr.salary.rule,name:dev_hr_loan.dev_emp_loan_installment
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.installment_line_tree
+msgid "Loan Installment"
+msgstr "اقساط القرض"
+
+#. module: dev_hr_loan
+#: model:hr.salary.rule,name:dev_hr_loan.dev_emp_loan_interest_installment
+msgid "Loan Installment Interest"
+msgstr "فائده تقسيط القرض"
+
+#. module: dev_hr_loan
+#. odoo-python
+#: code:addons/dev_hr_loan/models/skip_installment.py:0
+#, python-format
+msgid "Loan Manager and selected department manager not same"
+msgstr "مدير القروض ومدير القسم المختار ليسا متشابهين "
+
+#. module: dev_hr_loan
+#: model:ir.actions.report,name:dev_hr_loan.action_employee_loan_report
+msgid "Loan Report"
+msgstr "تقرير القرض"
+
+#. module: dev_hr_loan
+#: model:mail.template,name:dev_hr_loan.hr_manager_confirm_loan
+msgid "Loan Request Confirm"
+msgstr "تاكيد طلب القرض"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_hr_employee__loan_request
+#: model:ir.model.fields,field_description:dev_hr_loan.field_hr_employee_public__loan_request
+msgid "Loan Request Per Year"
+msgstr "طلب القرض كل سنه"
+
+#. module: dev_hr_loan
+#: model:mail.template,name:dev_hr_loan.hr_manager_reject_loan
+msgid "Loan Request Reject"
+msgstr "رفض طلب القرض"
+
+#. module: dev_hr_loan
+#: model:mail.template,name:dev_hr_loan.dev_hr_manager_request
+msgid "Loan Request to HR Manager"
+msgstr "طلب قرض لمدير الموارد البشرية"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan_type__loan_term
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_employee_loan_template
+msgid "Loan Term"
+msgstr " فترة قرض"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_analytic_line_view__loan_type_id
+#: model:ir.ui.menu,name:dev_hr_loan.menu_employee_loan_type
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_employee_loan_template
+msgid "Loan Type"
+msgstr "نوع القرض"
+
+#. module: dev_hr_loan
+#. odoo-python
+#: code:addons/dev_hr_loan/models/employee_loan.py:0
+#, python-format
+msgid "Loan delete in draft state only !!!"
+msgstr "حذف القرض في حالة المسودة فقط !!!"
+
+#. module: dev_hr_loan
+#: model:ir.model,name:dev_hr_loan.model_employee_loan
+msgid "Loan of an Employee"
+msgstr "قرض موظف"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_filter
+msgid "Loan type"
+msgstr "نوع القرض"
+
+#. module: dev_hr_loan
+#: model:mail.template,subject:dev_hr_loan.dev_dep_manager_request
+#: model:mail.template,subject:dev_hr_loan.dev_hr_manager_request
+msgid "Loan {{object.name}} Request form {{object.employee_id.name}}"
+msgstr " قرض {{object.name}} نموذج طلب {{object.employee_id.name}}"
+
+#. module: dev_hr_loan
+#: model:ir.ui.menu,name:dev_hr_loan.menu_main_employee_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_hr_employee_loan_inherit_form
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_dev_skip_installment_filter
+msgid "Loans"
+msgstr "القروض"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.external_layout_seti
+msgid "Logo"
+msgstr ""
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_import_logs__name
+msgid "Logs"
+msgstr "الشعار"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__employee_loan_type__priority__0
+msgid "Low"
+msgstr "منخفض"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__message_main_attachment_id
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "الوثيقة الرئيسيه"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_analytic_line_view__manager_id
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_employee_loan_template
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_filter
+msgid "Manager"
+msgstr "المدير"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__message_has_error
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__message_ids
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_loan_document__name
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__name
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__name
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan_type__name
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_line__name
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_employee_loan_template
+msgid "Name"
+msgstr "الاسم"
+
+#. module: dev_hr_loan
+#: model_terms:ir.actions.act_window,help:dev_hr_loan.action_loan_report
+msgid "No activity yet."
+msgstr "لا يوجد نشاط حتى الان"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__employee_loan_type__priority__1
+msgid "Normal"
+msgstr "عادي"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_loan_document__note
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_loan_document_view
+msgid "Note"
+msgstr "ملاحظه"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__message_needaction_counter
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__message_has_error_counter
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الخطاء"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,help:dev_hr_loan.field_dev_skip_installment__message_needaction_counter
+#: model:ir.model.fields,help:dev_hr_loan.field_employee_loan__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب اتخاذ إجراء"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,help:dev_hr_loan.field_dev_skip_installment__message_has_error_counter
+#: model:ir.model.fields,help:dev_hr_loan.field_employee_loan__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.external_layout_seti
+msgid ""
+"Page:\n"
+"                    <span class=\"page\"/>\n"
+"                    of\n"
+"                    <span class=\"topage\"/>"
+msgstr ""
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_line__is_paid
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__employee_loan__state__paid
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__installment_analytic_line_view__state__paid
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.hr_loan_type_kanban
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_filter
+msgid "Paid"
+msgstr "مدفوع"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__n_paid_amount
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__paid_amount
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_analytic_line_view__n_paid_amount
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_employee_loan_template
+msgid "Paid Amount"
+msgstr "المبلغ المدفوع"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_filter
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+msgid "Paid Loan"
+msgstr "القرض المدفوع"
+
+#. module: dev_hr_loan
+#: model:ir.model,name:dev_hr_loan.model_hr_payslip
+msgid "Pay Slip"
+msgstr "إيصال الدفع "
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__payment_method
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_employee_loan_template
+msgid "Payment Method"
+msgstr "طريقه الدفع"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_line__payslip_id
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+msgid "Payslip"
+msgstr "قسيمة الراتب"
+
+#. module: dev_hr_loan
+#. odoo-python
+#: code:addons/dev_hr_loan/models/employee_loan.py:0
+#: code:addons/dev_hr_loan/models/skip_installment.py:0
+#, python-format
+msgid "Please Select Department manager"
+msgstr "الرجاء تحديد مدير القسم"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan_type__priority
+msgid "Priority"
+msgstr "أولوية"
+
+#. module: dev_hr_loan
+#: model:ir.model,name:dev_hr_loan.model_hr_employee_public
+msgid "Public Employee"
+msgstr "موظف في القطاع العام"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__notes
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__notes
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_dev_skip_installment_form
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+msgid "Reason"
+msgstr "السبب"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__employee_loan__interest_type__reduce
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__employee_loan_type__interest_type__reduce
+msgid "Reduce"
+msgstr "يقلل"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__dev_skip_installment__state__reject
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__employee_loan__state__reject
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__installment_analytic_line_view__state__reject
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_dev_skip_installment_form
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+msgid "Reject"
+msgstr "مرفوص"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+msgid "Reject Request"
+msgstr "رفض الطلب"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__remaing_amount
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_employee_loan_template
+msgid "Remaing Amount"
+msgstr "المبلغ المتبقي"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__n_remaing_amount
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_analytic_line_view__n_remaing_amount
+msgid "Remaining Amount"
+msgstr "المبلغ المتبقي"
+
+#. module: dev_hr_loan
+#: model:mail.template,name:dev_hr_loan.dev_dep_manager_request
+msgid "Request to Department Manager"
+msgstr "طلب مدير القسم"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__message_has_sms_error
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل القصيرة"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_filter
+msgid "Search Employee Loan"
+msgstr "البحث عن قرض موظف"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_dev_skip_installment_filter
+msgid "Search Skip Installment"
+msgstr "بحث تخطي التقسيط"
+
+#. module: dev_hr_loan
+#. odoo-python
+#: code:addons/dev_hr_loan/models/saudi_invoice.py:0
+#, python-format
+msgid "Send Invoice"
+msgstr ""
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+msgid "Send Mail"
+msgstr "ارسل بريدًا"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_loan_document__sequ_name
+msgid "Sequence"
+msgstr "تسلسل"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_dev_skip_installment_form
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+msgid "Set to Draft"
+msgstr "ارجاع للمسوده"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.hr_loan_type_kanban
+msgid "Settings"
+msgstr "الضبط"
+
+#. module: dev_hr_loan
+#: model:ir.actions.act_window,name:dev_hr_loan.action_dev_skip_installment
+#: model:ir.model,name:dev_hr_loan.model_dev_skip_installment
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_line__is_skip
+#: model:ir.ui.menu,name:dev_hr_loan.menu_main_skipinstallment
+#: model:ir.ui.menu,name:dev_hr_loan.menu_skip_installment
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_dev_skip_installment_filter
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_dev_skip_installment_tree
+msgid "Skip Installment"
+msgstr "تخطي التقسيط"
+
+#. module: dev_hr_loan
+#: model:mail.template,name:dev_hr_loan.hr_manager_confirm_skip_installment
+msgid "Skip Installment Request Confirm By Hr Manager"
+msgstr "تخطي طلب التقسيط تأكيد من قبل مدير الموارد البشرية"
+
+#. module: dev_hr_loan
+#: model:mail.template,name:dev_hr_loan.hr_manager_reject_skip_installment
+msgid "Skip Installment Request Reject By Hr Manager"
+msgstr "تخطي طلب التقسيط مرفوص من قبل مدير الموارد البشرية"
+
+#. module: dev_hr_loan
+#: model:mail.template,name:dev_hr_loan.dev_skip_dep_manager_approval
+msgid "Skip Installment Request to Department Manager"
+msgstr "تخطي طلب التقسيط إلى مدير القسم"
+
+#. module: dev_hr_loan
+#: model:mail.template,name:dev_hr_loan.dev_skip_ins_hr_manager_request
+msgid "Skip Installment Request to HR Manager"
+msgstr "تخطي طلب التقسيط إلى مدير الموارد البشرية"
+
+#. module: dev_hr_loan
+#. odoo-python
+#: code:addons/dev_hr_loan/models/skip_installment.py:0
+#, python-format
+msgid "Skip Installment delete in draft state only !!!"
+msgstr "تخطي التقسيط يتم حذفه في حاله المسودة فقط"
+
+#. module: dev_hr_loan
+#: model:mail.template,subject:dev_hr_loan.dev_skip_dep_manager_approval
+msgid ""
+"Skip Installment {{object.name}} Request form {{object.employee_id.name}"
+msgstr "تخطي التقسيط {{object.name}} نموذج طلب {{object.employee_id.name}"
+
+#. module: dev_hr_loan
+#: model:mail.template,subject:dev_hr_loan.dev_skip_ins_hr_manager_request
+msgid ""
+"Skip Installment {{object.name}} Request form {{object.employee_id.name}}"
+msgstr "تخطي التقسيط {{object.name}} نموذج طلب {{object.employee_id.name}"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__start_date
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_employee_loan_template
+msgid "Start Date"
+msgstr "تاريخ البدايه"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__state
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__state
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_analytic_line_view__state
+msgid "State"
+msgstr "الحاله"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_dev_skip_installment_filter
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_filter
+msgid "States"
+msgstr "الحالات"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__dev_skip_installment__state__request
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__employee_loan__state__request
+#: model:ir.model.fields.selection,name:dev_hr_loan.selection__installment_analytic_line_view__state__request
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_dev_skip_installment_form
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+msgid "Submit Request"
+msgstr "تاكيد الطلب"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__term
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_analytic_line_view__term
+msgid "Term"
+msgstr "فترة"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_line__total_installment
+msgid "Total"
+msgstr "اجمالي"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.dev_employee_loan_template
+msgid "Total Amount"
+msgstr "اجمالي المبلغ"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_installment_line__interest
+msgid "Total Interest"
+msgstr "اجمالي الفائدة"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__loan_type_id
+msgid "Type"
+msgstr "نوع"
+
+#. module: dev_hr_loan
+#: model:ir.model,name:dev_hr_loan.model_employee_loan_type
+msgid "Type of employee Loan"
+msgstr "نوع قرض الموظف"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__skip_installment_url
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__loan_url
+msgid "URL"
+msgstr "رابط"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__user_id
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__user_id
+msgid "User"
+msgstr "مستخدم"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.hr_loan_type_kanban
+msgid "View All Loan"
+msgstr "عرض كل القروض"
+
+#. module: dev_hr_loan
+#: model:ir.actions.act_window,name:dev_hr_loan.action_view_all_loan
+msgid "View Loan"
+msgstr "عرض القرض"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,field_description:dev_hr_loan.field_dev_skip_installment__website_message_ids
+#: model:ir.model.fields,field_description:dev_hr_loan.field_employee_loan__website_message_ids
+msgid "Website Messages"
+msgstr "موقع الرسائل"
+
+#. module: dev_hr_loan
+#: model:ir.model.fields,help:dev_hr_loan.field_dev_skip_installment__website_message_ids
+#: model:ir.model.fields,help:dev_hr_loan.field_employee_loan__website_message_ids
+msgid "Website communication history"
+msgstr "تاريخ ترابط الموقع"
+
+#. module: dev_hr_loan
+#: model:mail.template,subject:dev_hr_loan.hr_manager_confirm_loan
+msgid "Your Loan {{object.name}} Request has been Confirmed"
+msgstr "تم تأكيد طلب القرض {{object.name}} الخاص بك"
+
+#. module: dev_hr_loan
+#: model:mail.template,subject:dev_hr_loan.dep_manager_reject_loan
+#: model:mail.template,subject:dev_hr_loan.hr_manager_reject_loan
+msgid "Your Loan {{object.name}} Request has been Rejected"
+msgstr "تم رفض طلب القرض {{object.name}} الخاص بك"
+
+#. module: dev_hr_loan
+#: model:mail.template,subject:dev_hr_loan.hr_manager_closed_loan
+msgid "Your Loan {{object.name}} has been closed"
+msgstr "تم اغلاق طلب القرض {{object.name}} الخاص بك"
+
+#. module: dev_hr_loan
+#: model:mail.template,subject:dev_hr_loan.hr_manager_confirm_skip_installment
+msgid "Your Skip Installment {{object.name}} Request has been Confirmed"
+msgstr "تم تأكيد طلب القسط التخطي {{object.name}}"
+
+#. module: dev_hr_loan
+#: model:mail.template,subject:dev_hr_loan.dep_manager_reject_skip_installment
+#: model:mail.template,subject:dev_hr_loan.hr_manager_reject_skip_installment
+msgid "Your Skip Installment {{object.name}} Request has been Rejected"
+msgstr "تم رفض طلب القسط التخطي {{object.name}}"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+msgid "amount"
+msgstr "مبلغ"
+
+#. module: dev_hr_loan
+#: model:ir.model,name:dev_hr_loan.model_import_loan
+msgid "import.loan"
+msgstr "استيراد القرض"
+
+#. module: dev_hr_loan
+#: model:ir.model,name:dev_hr_loan.model_import_logs
+msgid "import.logs"
+msgstr "استيراد الشعار"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+msgid "ins_interest"
+msgstr "في الفائدة"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+msgid "installment_amt"
+msgstr "مبلغ التقسيط"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+msgid "interest"
+msgstr "الفائدة"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.import_loan_form
+msgid "or"
+msgstr "او"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.view_employee_loan_form
+msgid "total_installment"
+msgstr "اجمالي التقسيط"
+
+#. module: dev_hr_loan
+#: model:mail.template,report_name:dev_hr_loan.dev_employee_loan_detail_send_mail
+msgid "{{object.name or''}}"
+msgstr "{{object.name او''}}"
+
+#. module: dev_hr_loan
+#: model:mail.template,subject:dev_hr_loan.dev_employee_loan_detail_send_mail
+msgid "{{object.name}} Loan Details"
+msgstr "{{object.name}}  تفاصيل القرض"
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.external_layout_seti
+msgid "‫‪ <span class=\"text-right\" style=\"padding-left:5px;\"/>CR No. :"
+msgstr ""
+
+#. module: dev_hr_loan
+#: model_terms:ir.ui.view,arch_db:dev_hr_loan.external_layout_seti
+msgid "‫‪ <span class=\"text-right\" style=\"padding-left:5px;\">VAT‬‬ No.: </span>"
+msgstr ""

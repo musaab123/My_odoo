@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+    For Module Support : devintelle@gmail.com  or Skype : devintelle
+-->
+<odoo>
+   
+<template id="external_layout_seti">
+        <t t-if="o and 'company_id' in o">
+        <t t-set="company" t-value="o.company_id"/>
+        </t>
+        <t t-if="not o or not 'company_id' in o">
+        <t t-set="company" t-value="res_company"/>  
+        </t>
+        <div class="header" style=" direction: initial;">
+            <table style="border:1pt solid grey;width:100%;font-size:12px;" width="100%">
+                <link rel="stylesheet" href="/saudi_einvoice_knk/static/src/css/style.css"/>
+                <tr>
+                    <td colspan="2" width="30%">
+                        <strong><span style="padding-left:5px;" t-field="company.name"/></strong><br/>
+                        <t t-if="company.street">
+                            <span style="padding-left:5px;" t-field="company.street"/><br/>
+                        </t>
+                        <t t-if="company.street2">
+                            <span style="padding-left:5px;" t-field="company.street2"/><br/>
+                        </t>
+                        <t t-if="company.city">
+                            <span style="padding-left:5px;" t-field="company.city"/><br/>
+                        </t>
+                        <t t-if="company.country_id">
+                            <span style="padding-left:5px;" t-field="company.country_id.name"/><br/>
+                        </t>
+                    </td>
+                    
+                    <td  colspan="3" width="30%" class="text-center"><img t-if="company.logo" t-att-src="image_data_uri(company.logo)" style="height: 100px;width: 100px; " alt="Logo"/></td>
+
+                    <td colspan="2" width="40%" class="enx" >
+                        <strong>
+                            <span class=" arabic" style="margin-right:6px;" t-field="company.arabic_name"/></strong><br/>
+                        <t t-if="company.street">
+                            <span class="text-right arabic" style="margin-right:6px;" t-field="company.arabic_street"/><br/>
+                        </t>
+                        <t t-if="company.street2">
+                            <span class="text-right arabic" style="margin-right:6px;" t-field="company.arabic_street2"/><br/>
+                        </t>
+                        <t t-if="company.city">
+                            <span class="text-right arabic" style="margin-right:6px;" t-field="company.arabic_city"/><br/>
+                        </t>
+                        <t t-if="company.arabic_country">
+                            <span class="text-right arabic" style="margin-right:6px;" t-field="company.arabic_country"/><br/>
+                        </t>
+                    </td>
+                </tr>
+                <tr style="border:1pt solid grey;">
+                    <td width="16%">‫‪ <span class="text-right" style="padding-left:5px;"/>CR No. : </td> 
+                    <td width="16%"> <span class="text-center arabic" t-field="company.company_registry"/> ‫‪</td> 
+                    <td width="17%"> <span class="text-right arabic" style="padding-left:-6px;">رقم السجل التجاري</span>‬</td>
+
+                    <td width="2%"></td>  
+
+                    <td width="16%">‫‪ <span class="text-right" style="padding-left:5px;">VAT‬‬ No.: </span> </td>
+                    <td width="16%"> <span class="text-center arabic" t-field="company.vat"/> ‫‪</td>
+                    <td width="17%"> <span class="text-right arabic" style="margin-left:15px;">ضريبة القيمة المضافة</span>‬</td>
+                </tr>  
+            </table>
+        </div>
+        <div class="article o_report_layout_standard">
+            <t t-raw="0" />
+        </div>
+        <div class="footer o_background_footer">
+            <div class="text-center" style="font-size:14px;"  >
+                <ul class="list-inline">
+                    <li t-if="company.phone" class="list-inline-item"><i class="fa fa-phone" role="img" aria-label="Phone" title="Phone"/> <span t-field="company.phone"/></li>
+                    <li t-if="company.email" class="list-inline-item"><i class="fa fa-at" role="img" aria-label="Email" title="Email"/> <span t-field="company.email"/></li>
+                    <li t-if="company.website" class="list-inline-item"><i class="fa fa-globe" role="img" aria-label="Website" title="Website"/> <span t-field="company.website"/></li>
+                    <li t-if="company.vat" class="list-inline-item"><i class="fa fa-building-o" role="img" aria-label="Fiscal number"/><t t-esc="(company.country_id.vat_label or 'Tax ID').replace(' ','\N{NO-BREAK SPACE}')"/>: <span t-esc="company.vat.replace(' ','\N{NO-BREAK SPACE}')"/></li>
+                </ul>
+                <!-- <div t-field="company.report_footer"/> -->
+                <div t-if="report_type == 'pdf'" class="text-muted">
+                    Page:
+                    <span class="page"/>
+                    of
+                    <span class="topage"/>
+                </div>
+            </div>
+        </div>
+    </template>
+
+<template id="dev_employee_loan_template">
+    <!-- <t t-call="web.external_layout"> -->
+    <t t-call="dev_hr_loan.external_layout_seti">
+        <div class="page">
+        <link rel="stylesheet" href="/dev_hr_loan/static/src/css/style.css"/>
+            <style>
+                .mydiv {
+                    width: 100%;
+                    border: 1px solid black;
+                    border-color: #000;
+                    padding-right: 5px;
+
+                    line-height: 25px;
+                    margin: 0px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                },
+                .header_table td{
+                    padding:5px;
+                    font-size:13px;
+                }
+                .installment_table th{
+                    background:#ebeced;
+                    padding:5px;
+                    font-size:12px;
+                }
+                .installment_table td{
+                    padding:5px;
+                    font-size:12px;
+                }
+            </style>
+
+
+            <!-- ooooooooooooooooooooooooooooooooooooooo -->
+             <div class="row">
+                <div class="col-12">
+                    <center><h3>Employee Loan - <span t-esc="o.name"/></h3></center>
+                </div>
+            </div>
+            
+                    <div class="row mydiv">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-3" style="padding:5px;" >
+                                            Employee 
+                                        </div>
+                                        <div class="col-3">
+                                            <span t-esc="o.employee_id.name"/><br/>
+                                                <!-- <t t-if="o.employee_id.address_home_id">
+                                                    <div t-field="o.employee_id.address_home_id"
+                                                            t-options='{"widget": "contact", "fields": ["address", "phone"], "no_marker": True, "phone_icons": False}'/>
+                                                </t> -->
+                                        </div>
+
+                                        <div class="col-3" style="padding:5px;" >
+                                             Date 
+                                        </div>
+                                        <div class="col-3">
+                                           
+                                            <span t-field="o.date" t-options ='{"format": "dd-MM-yyyy"}' />
+                                        </div>
+                                    </div>
+
+                                 <div class="row">
+                                        <div class="col-3" style="padding:5px;">
+                                            Department
+                                        </div>
+                                        <div class="col-3" style="padding:5px;">
+                                            <span t-field="o.department_id"/>
+                                        </div>
+
+                                        <div class="col-3" style="padding:5px;">
+                                            Manager 
+                                        </div>
+                                        <div class="col-3" style="padding:5px;">
+                                        <span t-field="o.manager_id"/>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-3" style="padding:5px;">
+                                            Job Position
+                                        </div>
+                                        <div class="col-3">
+                                            <span t-field="o.job_id"/>
+                                        </div>
+
+                                        <div class="col-3" style="padding:5px;">
+                                            Loan Amount
+                                        </div>
+                                        <div class="col-3">
+                                            <span t-field="o.loan_amount"/>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-3" style="padding:5px;">
+                                           Loan Type
+                                        </div>
+                                        <div class="col-3">
+                                            <span t-field="o.loan_type_id"/>
+                                        </div>
+
+                                        <div class="col-3" style="padding:5px;">
+                                            Loan Term
+                                        </div>
+                                        <div class="col-3">
+                                            <span t-field="o.term"/>
+                                        </div>
+                                    </div>
+
+
+                                     <div class="row">
+                                        <div class="col-3" style="padding:5px;">
+                                          Interest Rate
+                                        </div>
+                                        <div class="col-3">
+                                            <span t-field="o.interest_rate"/>
+                                        </div>
+
+                                        <div class="col-3" style="padding:5px;" >
+                                            Interest Type
+                                        </div>
+                                        <div class="col-3">
+                                            <span t-field="o.interest_type"/>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-3" style="padding:5px;" >
+                                          Interest Amount
+                                        </div>
+                                        <div class="col-3">
+                                            <span t-field="o.interest_amount" />
+                                        </div>
+
+                                        <div class="col-3" style="padding:5px;">
+                                            Paid Amount
+                                        </div>
+                                        <div class="col-3">
+                                            <span t-field="o.paid_amount"/>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="row">
+                                        <div class="col-6" style="padding:5px;" >
+                                         Remaing Amount
+                                        </div>
+                                        <div class="col-6">
+                                            <span t-field="o.remaing_amount"/>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                            </div>
+
+            <!-- ooooooooooooooooooooooooooooooooooooooo -->
+            <br></br>
+            <br></br>
+            <div class="row mt16 mb16">
+                <div class="col-12">
+                    <table width="100%" class="installment_table">
+                        <thead>
+                            <tr>
+                                <th width="33%" style="border:1px solid black" class="text-center">Payment Method</th>
+                                <th width="33%" style="border:1px solid black" class="text-center">Start Date</th>
+                                <th width="34%" style="border:1px solid black" class="text-center">End Date</th>
+                            </tr>
+                        </thead>
+                        <tbody class="sale_tbody">
+                            <tr>
+                                <td style="border:1px solid black" class="text-center">By Payslip</td>
+                                <td style="border:1px solid black" class="text-center"><span t-field="o.start_date" t-options ='{"format": "dd-MM-yyyy"}'/></td>
+                                <td style="border:1px solid black" class="text-center"><span t-field="o.end_date" t-options ='{"format": "dd-MM-yyyy"}'/></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <br></br> <br></br>
+            
+            <div class="row mt16 mb16">
+                <div class="col-12">
+                    <table width="100%" class="installment_table">
+                        <thead>
+                            <tr>
+                                <th width="20%" style="border:1px solid black">Name</th>
+                                <th width="20%" style="border:1px solid black" class="text-center">Date</th>
+                                <th width="20%" style="border:1px solid black" class="text-right">Ins. Amount</th>
+                                <th width="20%" style="border:1px solid black" class="text-right">Int. Amount</th>
+                                <th width="20%" style="border:1px solid black" class="text-right">Total Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody class="sale_tbody">
+                            <tr t-foreach="o.installment_lines" t-as="line"  style="page-break-inside: avoid">
+                                <t t-if="line.is_paid">
+                                    <td style="border:1px solid black"><span t-field="line.name"/></td>
+                                    <td style="border:1px solid black" class="text-center success"><span t-field="line.date" t-options ='{"format": "dd-MM-yyyy"}'/></td>
+                                    <td style="border:1px solid black" class="text-center success"><span t-field="line.installment_amt"/></td>
+                                    <td style="border:1px solid black" class="text-center success"><span t-field="line.ins_interest"/></td>
+                                    <td style="border:1px solid black" class="text-center success"><span t-field="line.total_installment"/></td>
+                                </t>
+                                <t t-if="not line.is_paid">
+                                    <td style="border:1px solid black" class="text-center"><span t-field="line.name"/></td>
+                                    <td style="border:1px solid black" class="text-center"><span t-field="line.date" t-options ='{"format": "dd-MM-yyyy"}'/></td>
+                                    <td style="border:1px solid black" class="text-center"><span t-field="line.installment_amt"/></td>
+                                    <td style="border:1px solid black" class="text-center"><span t-field="line.ins_interest"/></td>
+                                    <td style="border:1px solid black" class="text-center"><span t-field="line.total_installment"/></td>
+                                </t>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </t>
+    </template>
+   
+   <template id="employee_loan_template">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="dev_hr_loan.dev_employee_loan_template"/>
+            </t>
+        </t>
+</template>
+</odoo>
