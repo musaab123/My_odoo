@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="sallary_certifcate_pdf_custom">
+		<t t-call="web.html_container">
+			<div class="article o_report_layout_standard" t-att-data-oe-model="" t-att-data-oe-id="">
+				<t t-call="employee_extra_data.custom_session_header_footer" />
+                <t t-foreach="docs" t-as="doc">
+                <div class="page">
+                    <link rel="stylesheet" href="/employee_extra_data/static/src/css/style.css" />
+                   
+                   
+                     <br></br>
+                    <br></br>    
+                    
+                    
+                    <div style="text-align: center">
+                        <u>
+                                <strong style="color:#000;font-size:30px;
+                                 font-weight:120;
+                                 text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);" class="text-center"> Salary certificate </strong>
+                        </u>
+                    </div>
+
+                     <br></br>
+                    <br></br>
+                     <br></br>
+                    <br></br>
+
+
+
+                <div class="card mb-3 px-4 py-2 border-0 border-start border-top border-bottom border-end border-primary border-2 bg-light-primary" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:27px; font-weight:110; line-height:2;">
+                     <br></br>
+								<small >
+                <div style="text-align: center">
+                        <u>
+                                <strong class="text-center"> To Whom It May Concern </strong>
+                        </u>
+                    </div>
+									<span>After Greetings  ....................................................................................</span><br></br>
+                   <span>witness company</span>  <strong><span t-field="doc.company_id.name"/> </strong><span>That the aforementioned below joined the company on</span> <strong><span t-field="doc.contract_id.date_start"/></strong>
+                   <span>He is still practicing his work until the issuance of this certificate on </span> <strong><span t-field="doc.date_creation"/></strong>
+                  <span> to confirm that /  mr </span> <strong><span t-field="doc.name"/></strong><span>works a job</span><strong> <span t-field="doc.job_title"/></strong>  <span> Salary and amount </span> <strong><span t-field="doc.contract_id.wage"/></strong>
+                   <span>This certificate was granted as a scholarship without the company bearing the slightest responsibility towards the rights of others</span>
+                   
+                  
+                      
+								</small>
+
+                   <br></br>
+                    <br></br>    
+                    
+                    <br></br>
+                      
+               
+                  <!-- ppppppppppppppppppppppppppppppppppppppppppp -->
+                 <div class="w-100 row justify-content-between"  >
+                          <div class="col-4 ">
+                          
+                            <span>Head Manager </span>
+                             <span>.........................</span>
+              
+                          </div>
+
+                          <div class="col-4 ">
+                            
+                            <span > Seal </span><br></br>
+                            <span> .........................</span>
+
+                      
+                          </div>
+                           <div class="col-4 ">
+                            
+                            <span>HR Manager  </span><br></br>
+                            <span> .........................</span>
+
+                      
+                          </div>
+                     
+
+                        
+
+                        </div>
+
+
+                    <!-- ppppppppppppppppppppppppppppppppppppppppppp -->
+
+
+					</div>
+              
+
+
+                  
+                  
+
+                </div>
+
+                </t>
+
+            
+			
+			</div>
+		</t>
+	</template>
+</odoo>

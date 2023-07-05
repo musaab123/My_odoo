@@ -1,0 +1,21 @@
+:root {
+	--primary: #6816C8;;
+	--dark-primary: #7a09fa;
+	--light-primary: #fbf5ff;
+	--secondary: #f48b0b;
+	--dark-secondary: #da7800;
+	--dark-white: #F9F7FC;
+	--light-purble: #882DF1;
+	--dark-yellow: #F58B0B;
+}
+
+
+.border-primary {
+	border-color: #030006 !important;
+}
+
+.card{
+  background-color: #fbf5ff !important;
+}
+
+

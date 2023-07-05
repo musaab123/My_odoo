@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+  
+
+
+        <record id="action_report_prosys_delevry_slip_pdf_custom" model="ir.actions.report">
+            <field name="name">Experience certificate </field>
+            <field name="model">hr.employee</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">employee_extra_data.delevry_slip_pdf_custom</field>
+            <field name="report_file">employee_extra_data.delevry_slip_pdf_custom</field>
+            <field name="binding_model_id" ref="hr.model_hr_employee"/>
+            <field name="binding_type">report</field>
+
+        </record>
+
+        <record id="action_report_prosys_delevry_slip_pdf_custom_tu" model="ir.actions.report">
+            <field name="name">Sallary certificate </field>
+            <field name="model">hr.employee</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">employee_extra_data.sallary_certifcate_pdf_custom</field>
+            <field name="report_file">employee_extra_data.sallary_certifcate_pdf_custom</field>
+            <field name="binding_model_id" ref="hr.model_hr_employee"/>
+            <field name="binding_type">report</field>
+
+        </record>
+         
+
+
+       
+
+
+
+
+    </data> 
+
+</odoo>
+
+
+
