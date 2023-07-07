@@ -13,21 +13,21 @@
     'category': 'Human Resources/Attendance',
     'author': 'Prosys',
     'company': 'PROSYS',
-    'depends': ['hr_expense', 'portal', 'portal_hr_knk','sh_hr_attendance_geolocation'],
+    'depends': ['hr', 'portal', 'portal_hr_knk','sh_hr_attendance_geolocation','employee_extra_data'],
     'data': [
         'views/portal_expense_templates.xml',
         
     ],
-    'assets': {
-        'web.assets_backend': [
-            '/hr_expense/static/src/**/*',
-            '/hr_expense/static/src/xml/**/*',
-        ],
-        'web.assets_frontend': [
-            '/portal_expenses/static/src/js/attendance_portal.js',
-            '/portal_expenses/static/src/js/checkin_out.js',
-        ],
-    },
+    # 'assets': {
+    #     'web.assets_backend': [
+    #         '/hr_expense/static/src/**/*',
+    #         '/hr_expense/static/src/xml/**/*',
+    #     ],
+    #     'web.assets_frontend': [
+    #         '/portal_expenses/static/src/js/attendance_portal.js',
+    #         '/portal_expenses/static/src/js/checkin_out.js',
+    #     ],
+    # },
     'installable': True,
     'application': False,
     'auto_install': False,
